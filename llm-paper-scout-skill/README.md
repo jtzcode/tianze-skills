@@ -1,4 +1,4 @@
-# LLM Paper Scout
+# Tianze LLM Paper Scout Skill
 
 A lightweight cross-tool paper recommendation skill for:
 - OpenAI Codex
@@ -20,9 +20,9 @@ Goal: each run recommends 3 recent arXiv papers by default, unless you explicitl
 
 ## Install in Codex
 1. Copy `codex/AGENTS.md` to your repo root as `AGENTS.md`, or merge its content into your existing `AGENTS.md`.
-2. Copy `codex/.codex/skills/llm-paper-scout/` into your repo at the same path.
+2. Copy `codex/.codex/skills/tianze-llm-paper-scout-skill/` into your repo at the same path.
 3. In Codex, ask something like:
-   - `Use the llm-paper-scout skill to recommend papers for this week.`
+   - `Use the tianze-llm-paper-scout-skill skill to recommend papers for this week.`
    - `Recommend recent papers on agent systems and RAG.`
 
 ## Install in GitHub Copilot

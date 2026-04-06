@@ -1,9 +1,9 @@
 ---
-name: llm-paper-scout
+name: tianze-llm-paper-scout-skill
 description: Recommend 3 recent arXiv papers about AI and LLMs by default, unless the user explicitly asks for a different count, with emphasis on engineering usefulness over theory-heavy work.
 ---
 
-# LLM Paper Scout
+# Tianze LLM Paper Scout Skill
 
 ## Purpose
 Use this skill when the user wants AI / LLM paper recommendations, especially from arXiv, and wants:
