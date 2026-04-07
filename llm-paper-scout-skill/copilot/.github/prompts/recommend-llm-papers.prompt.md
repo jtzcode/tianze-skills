@@ -16,6 +16,9 @@ Selection policy:
   4. Inference / serving / scheduling / systems optimization
   5. LLMs for software engineering
 - Avoid papers that are mainly proof-driven or mathematically dense without clear engineering relevance.
+- If I ask whether a paper is worth reading, judge it by: clear problem, concrete method, credible evidence, realistic setup, and transfer value.
+- If I ask for objective signals before reading, use: accepted venue or journal reference, code availability, benchmark placement, OpenReview scores/comments, citation count for older papers, and version history as a weak signal only.
+- Do not present any of those as an official arXiv score.
 
 For each paper, provide:
 - **Title**

@@ -6,6 +6,8 @@ A lightweight cross-tool paper recommendation skill for:
 
 Goal: each run recommends 3 recent arXiv papers by default, unless you explicitly ask for a different count. The picks should be more useful for engineering practice than for theory-heavy study.
 
+It also includes a quick rubric for deciding whether a paper is worth reading and a short list of objective pre-read signals to check before investing time.
+
 ## What it prioritizes
 - Agent systems and workflows
 - RAG / retrieval systems / graph-based retrieval
