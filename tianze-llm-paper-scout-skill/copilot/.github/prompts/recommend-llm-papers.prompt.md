@@ -11,10 +11,11 @@ Selection policy:
 - Prefer recent papers.
 - Prefer these topics unless I specify otherwise:
   1. Agent systems and workflows
-  2. RAG and retrieval systems
-  3. Post-training, distillation, compression
-  4. Inference / serving / scheduling / systems optimization
-  5. LLMs for software engineering
+  2. Memory mechanisms for agents
+  3. RAG and retrieval systems
+  4. Post-training, distillation, compression
+  5. Inference / serving / scheduling / systems optimization
+  6. LLMs for software engineering
 - Avoid papers that are mainly proof-driven or mathematically dense without clear engineering relevance.
 - If I ask whether a paper is worth reading, judge it by: clear problem, concrete method, credible evidence, realistic setup, and transfer value.
 - If I ask for objective signals before reading, use: accepted venue or journal reference, code availability, benchmark placement, OpenReview scores/comments, citation count for older papers, and version history as a weak signal only.

@@ -26,10 +26,11 @@ Assume the reader:
 ## Topic priorities
 Prefer papers in these areas, unless the user narrows the topic:
 1. Agent systems and workflows
-2. RAG, retrieval systems, graph-based retrieval, and context engineering
-3. Post-training, distillation, compression, and reasoning transfer
-4. Inference, serving, scheduling, memory, and systems optimization
-5. LLMs for software engineering and coding agents
+2. Memory mechanisms for agents
+3. RAG, retrieval systems, graph-based retrieval, and context engineering
+4. Post-training, distillation, compression, and reasoning transfer
+5. Inference, serving, scheduling, memory, and systems optimization
+6. LLMs for software engineering and coding agents
 
 ## Deprioritize
 Avoid or strongly deprioritize papers that are mainly:

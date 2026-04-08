@@ -10,6 +10,7 @@ It also includes a quick rubric for deciding whether a paper is worth reading an
 
 ## What it prioritizes
 - Agent systems and workflows
+- Memory mechanisms for agents
 - RAG / retrieval systems / graph-based retrieval
 - Post-training, distillation, compression, and inference efficiency
 - LLM serving, scheduling, and systems optimization
