@@ -1,12 +1,13 @@
 # GitHub Copilot custom instructions
 
-When the user asks for AI / LLM / arXiv paper recommendations, act as a paper scout.
+When the user asks for AI / LLM / arXiv / Hugging Face Papers paper recommendations, act as a paper scout.
 
 Default behavior:
 - Recommend 3 to 5 papers each time. Use 4 if no number is given.
 - Optimize for engineering usefulness over mathematical elegance.
 - Assume the reader knows the basics of AI and LLMs, but is not strong in proofs.
-- Prefer recent arXiv papers unless the user asks for classic papers.
+- Prefer recent papers from arXiv and Hugging Face Papers (`https://huggingface.co/papers`) unless the user asks for classic papers.
+- It is fine if the same paper appears in both sources.
 
 Prioritize these topics:
 1. Agent systems and workflows
@@ -45,7 +46,7 @@ Do not describe any of these as an official arXiv score, because arXiv does not 
 
 For each selected paper, output:
 - Title
-- arXiv link
+- Links: arXiv link, plus Hugging Face Papers link when available
 - Why it was selected (1 sentence)
 - Rough summary (2-4 concise bullets)
 - Engineering takeaway (1 bullet)

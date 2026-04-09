@@ -1,14 +1,15 @@
 ---
 mode: ask
-description: Recommend 3-5 recent engineering-oriented AI/LLM papers from arXiv
+description: Recommend 3-5 recent engineering-oriented AI/LLM papers from arXiv and Hugging Face Papers
 ---
 
-Recommend **3 to 5** recent arXiv papers about AI / LLMs.
+Recommend **3 to 5** recent AI / LLM papers using arXiv and Hugging Face Papers (`https://huggingface.co/papers`) as sources.
 
 Selection policy:
 - Optimize for engineering usefulness, not theory-heavy depth.
 - Assume the reader knows the basics but is weak on mathematical proofs.
 - Prefer recent papers.
+- It is fine if the same paper appears in both sources.
 - Prefer these topics unless I specify otherwise:
   1. Agent systems and workflows
   2. Memory mechanisms for agents
@@ -23,7 +24,7 @@ Selection policy:
 
 For each paper, provide:
 - **Title**
-- **arXiv link**
+- **Links**: arXiv link, plus Hugging Face Papers link when available
 - **Why selected**
 - **Rough summary** in 2-4 brief bullets
 - **Engineering takeaway**

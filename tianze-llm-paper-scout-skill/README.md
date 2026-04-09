@@ -4,9 +4,10 @@ A lightweight cross-tool paper recommendation skill for:
 - OpenAI Codex
 - GitHub Copilot
 
-Goal: each run recommends 3 recent arXiv papers by default, unless you explicitly ask for a different count. The picks should be more useful for engineering practice than for theory-heavy study.
+Goal: each run recommends 3 recent AI / LLM papers from arXiv and Hugging Face Papers by default, unless you explicitly ask for a different count. The picks should be more useful for engineering practice than for theory-heavy study.
 
 It also includes a quick rubric for deciding whether a paper is worth reading and a short list of objective pre-read signals to check before investing time.
+It treats `https://huggingface.co/papers` as an additional discovery source, and it is fine if a selected paper also appears on arXiv.
 
 ## What it prioritizes
 - Agent systems and workflows
@@ -26,13 +27,13 @@ It also includes a quick rubric for deciding whether a paper is worth reading an
 2. Copy `codex/.codex/skills/tianze-llm-paper-scout-skill/` into your repo at the same path.
 3. In Codex, ask something like:
    - `Use the tianze-llm-paper-scout-skill skill to recommend papers for this week.`
-   - `Recommend recent papers on agent systems and RAG.`
+   - `Recommend recent papers from arXiv and Hugging Face Papers on agent systems and RAG.`
 
 ## Install in GitHub Copilot
 1. Copy `copilot/.github/copilot-instructions.md` into your repo.
 2. Copy `copilot/.github/prompts/recommend-llm-papers.prompt.md` into your repo.
 3. In Copilot Chat, open the prompt file or reuse its text. Example asks:
-   - `Recommend 3 recent arXiv papers on LLM serving and distillation.`
+   - `Recommend 3 recent papers from arXiv and Hugging Face Papers on LLM serving and distillation.`
    - `Use the repository instructions and recommend 5 engineering-oriented LLM papers.`
 
 ## Notes
