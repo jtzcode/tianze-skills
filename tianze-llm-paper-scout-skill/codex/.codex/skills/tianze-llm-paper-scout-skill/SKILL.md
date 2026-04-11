@@ -1,6 +1,6 @@
 ---
 name: tianze-llm-paper-scout-skill
-description: Recommend 3 recent AI and LLM papers from arXiv and Hugging Face Papers by default, unless the user explicitly asks for a different count, with emphasis on engineering usefulness over theory-heavy work.
+description: Recommend 3 recent AI and LLM papers from arXiv and Hugging Face Papers by default, unless the user explicitly asks for a different count, with emphasis on engineering usefulness over theory-heavy work and high priority for new OpenAI or Anthropic papers.
 ---
 
 # Tianze LLM Paper Scout Skill
@@ -22,6 +22,12 @@ Use both of these paper-discovery sources:
 - Hugging Face Papers: `https://huggingface.co/papers`
 
 If the same paper appears in both places, that overlap is fine. Do not exclude a paper just because it is listed on both sources.
+
+## Organization priority
+When there are new, relevant papers or technical reports from OpenAI or Anthropic, treat them as high-priority candidates.
+- Prefer them over similarly relevant papers from other organizations.
+- If both OpenAI and Anthropic have new, relevant, high-quality papers, try to include both within the selected 3.
+- Do not force-include a paper solely because of the organization if it is off-topic, weakly evaluated, or not useful for the reader's engineering goals.
 
 ## Reader profile to optimize for
 Assume the reader:
@@ -50,12 +56,13 @@ Avoid or strongly deprioritize papers that are mainly:
 When choosing papers:
 1. Favor recent papers from arXiv and Hugging Face Papers.
 2. It is fine if the same paper appears in both sources; overlap is not a reason to exclude it.
-3. Optimize first for **fit to the user's interests and reader profile**, not for topic coverage.
-4. Among plausible candidates, choose the **highest-quality** papers based on clarity of problem, strength of method, credibility of evaluation, and practical relevance.
-5. Prefer papers that clearly state a system problem, method, and evaluation.
-6. Prefer papers with experiments, benchmarks, ablations, or deployment implications.
-7. Prefer survey papers only when the user asks for a map of a topic; otherwise prefer concrete recent papers.
-8. If the user does not specify a count, do **not** add honorable mentions or backup picks beyond the selected 3.
+3. Give high priority to new, relevant papers from OpenAI and Anthropic.
+4. Optimize first for **fit to the user's interests and reader profile**, not for topic coverage.
+5. Among plausible candidates, choose the **highest-quality** papers based on clarity of problem, strength of method, credibility of evaluation, and practical relevance.
+6. Prefer papers that clearly state a system problem, method, and evaluation.
+7. Prefer papers with experiments, benchmarks, ablations, or deployment implications.
+8. Prefer survey papers only when the user asks for a map of a topic; otherwise prefer concrete recent papers.
+9. If the user does not specify a count, do **not** add honorable mentions or backup picks beyond the selected 3.
 
 ## Output format
 For each paper, provide:
@@ -119,6 +126,7 @@ If a paper has none of these signals, treat it as interesting but unproven.
 
 ## Example invocation
 - Recommend recent papers from arXiv and Hugging Face Papers about agent workflows and RAG.
+- Recommend recent OpenAI and Anthropic papers that are useful for an engineer building LLM products.
 - Recommend 3 engineering-oriented LLM papers from the last 2 months.
 - Recommend 5 papers about distillation and LLM serving, but avoid theory-heavy work.
 - Is this arXiv paper worth reading for an engineer building RAG systems?

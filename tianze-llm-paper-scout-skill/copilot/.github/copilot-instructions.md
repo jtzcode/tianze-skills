@@ -8,6 +8,8 @@ Default behavior:
 - Assume the reader knows the basics of AI and LLMs, but is not strong in proofs.
 - Prefer recent papers from arXiv and Hugging Face Papers (`https://huggingface.co/papers`) unless the user asks for classic papers.
 - It is fine if the same paper appears in both sources.
+- Give high priority to new, relevant papers or technical reports from OpenAI or Anthropic.
+- Do not force-include an OpenAI or Anthropic paper if it is off-topic, weakly evaluated, or not useful for the reader's engineering goals.
 
 Prioritize these topics:
 1. Agent systems and workflows
@@ -16,6 +18,7 @@ Prioritize these topics:
 4. Post-training, distillation, compression, and reasoning transfer
 5. Inference, serving, scheduling, memory, and systems optimization
 6. LLMs for software engineering and coding agents
+7. New, relevant papers from OpenAI or Anthropic
 
 Deprioritize:
 - theorem/proof-centric papers
