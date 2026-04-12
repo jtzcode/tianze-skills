@@ -4,11 +4,11 @@ A lightweight cross-tool paper recommendation skill for:
 - OpenAI Codex
 - GitHub Copilot
 
-Goal: each run recommends 3 recent AI / LLM papers from arXiv and Hugging Face Papers by default, unless you explicitly ask for a different count. The picks should be more useful for engineering practice than for theory-heavy study, with high priority for new, relevant OpenAI or Anthropic papers.
+Goal: each run recommends 3 recent AI / LLM papers from arXiv and Hugging Face Papers by default, unless you explicitly ask for a different count. The picks should be more useful for engineering practice than for theory-heavy study, with high priority for new, relevant OpenAI or Anthropic papers, technical reports, or research posts.
 
 It also includes a quick rubric for deciding whether a paper is worth reading and a short list of objective pre-read signals to check before investing time.
 It treats `https://huggingface.co/papers` as an additional discovery source, and it is fine if a selected paper also appears on arXiv.
-When new OpenAI or Anthropic papers are relevant and credible, the skill should prefer them over similarly useful papers from other organizations.
+When new OpenAI or Anthropic papers, technical reports, or public research posts are relevant and credible, the skill should prefer them over similarly useful papers from other organizations. Research posts are acceptable, but the skill should double-check that they are truly worth the reader's time before recommending them.
 
 ## What it prioritizes
 - Agent systems and workflows
@@ -17,7 +17,8 @@ When new OpenAI or Anthropic papers are relevant and credible, the skill should 
 - Post-training, distillation, compression, and inference efficiency
 - LLM serving, scheduling, and systems optimization
 - LLMs for software engineering
-- New, relevant papers from OpenAI or Anthropic
+- Human-AI relationship: sensemaking, cognitive offloading, cooperation, trust, agency, and how humans should think or work with AI
+- New, relevant papers, technical reports, or research posts from OpenAI or Anthropic
 
 ## What it deprioritizes
 - Pure theorem/proof papers
@@ -30,6 +31,7 @@ When new OpenAI or Anthropic papers are relevant and credible, the skill should 
 3. In Codex, ask something like:
    - `Use the tianze-llm-paper-scout-skill skill to recommend papers for this week.`
    - `Recommend recent papers from arXiv and Hugging Face Papers on agent systems and RAG.`
+   - `Recommend recent papers about human-AI cooperation, sensemaking, and how people should think with AI.`
    - `Recommend recent OpenAI and Anthropic papers that are useful for an engineer building LLM products.`
 
 ## Install in GitHub Copilot

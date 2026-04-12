@@ -10,6 +10,7 @@ Use this skill when the user wants AI / LLM paper recommendations, especially fr
 - a lightweight weekly or on-demand reading list
 - awareness of current frontiers
 - papers with practical engineering value
+- thoughtful work on how humans and AI think, make sense of things, and cooperate
 - short, high-level summaries instead of deep technical walkthroughs
 
 ## Default behavior
@@ -20,14 +21,18 @@ When the user does not specify a number, choose the **3 best overall matches** f
 Use both of these paper-discovery sources:
 - arXiv
 - Hugging Face Papers: `https://huggingface.co/papers`
+- OpenAI and Anthropic public research posts or technical reports, when they are truly worth the reader's time
 
 If the same paper appears in both places, that overlap is fine. Do not exclude a paper just because it is listed on both sources.
 
 ## Organization priority
-When there are new, relevant papers or technical reports from OpenAI or Anthropic, treat them as high-priority candidates.
+When there are new, relevant papers, technical reports, or public research posts from OpenAI or Anthropic, treat them as high-priority candidates.
 - Prefer them over similarly relevant papers from other organizations.
-- If both OpenAI and Anthropic have new, relevant, high-quality papers, try to include both within the selected 3.
-- Do not force-include a paper solely because of the organization if it is off-topic, weakly evaluated, or not useful for the reader's engineering goals.
+- If both OpenAI and Anthropic have new, relevant, high-quality items, try to include both within the selected 3.
+- Public research posts are acceptable, but only include them after a second-pass worth-reading check.
+- For research posts, double-check that the post has concrete mechanisms, practical engineering implications, credible examples/evidence, or product/safety relevance for the reader.
+- Do not force-include an item solely because of the organization if it is off-topic, too high-level, weakly supported, or not useful for the reader's engineering goals.
+- Clearly label each OpenAI or Anthropic item as **Paper**, **Technical report**, or **Research post**.
 
 ## Reader profile to optimize for
 Assume the reader:
@@ -35,6 +40,7 @@ Assume the reader:
 - is not strong in mathematical proofs
 - wants to understand research frontiers through an engineering lens
 - prefers work that can help solve real system, product, or workflow problems
+- is also interested in the human-AI relationship: how people think with AI, make sense with AI, cooperate with AI, and adapt practices around AI
 
 ## Topic priorities
 Prefer papers in these areas, unless the user narrows the topic:
@@ -44,6 +50,7 @@ Prefer papers in these areas, unless the user narrows the topic:
 4. Post-training, distillation, compression, and reasoning transfer
 5. Inference, serving, scheduling, memory, and systems optimization
 6. LLMs for software engineering and coding agents
+7. Human-AI relationship, including sensemaking, cognitive offloading, human-AI cooperation, collaborative workflows, trust, agency, and how humans should think or work with AI
 
 ## Deprioritize
 Avoid or strongly deprioritize papers that are mainly:
@@ -56,7 +63,7 @@ Avoid or strongly deprioritize papers that are mainly:
 When choosing papers:
 1. Favor recent papers from arXiv and Hugging Face Papers.
 2. It is fine if the same paper appears in both sources; overlap is not a reason to exclude it.
-3. Give high priority to new, relevant papers from OpenAI and Anthropic.
+3. Give high priority to new, relevant papers, technical reports, and research posts from OpenAI and Anthropic.
 4. Optimize first for **fit to the user's interests and reader profile**, not for topic coverage.
 5. Among plausible candidates, choose the **highest-quality** papers based on clarity of problem, strength of method, credibility of evaluation, and practical relevance.
 6. Prefer papers that clearly state a system problem, method, and evaluation.
@@ -67,6 +74,7 @@ When choosing papers:
 ## Output format
 For each paper, provide:
 - **Title**
+- **Type**: Paper / Technical report / Research post
 - **Links**: arXiv link, plus Hugging Face Papers link when available
 - **Why it was selected**: 1 sentence
 - **Rough summary**: 2-4 short bullets, high level only
@@ -126,6 +134,7 @@ If a paper has none of these signals, treat it as interesting but unproven.
 
 ## Example invocation
 - Recommend recent papers from arXiv and Hugging Face Papers about agent workflows and RAG.
+- Recommend recent papers about human-AI cooperation, sensemaking, and how people should think with AI.
 - Recommend recent OpenAI and Anthropic papers that are useful for an engineer building LLM products.
 - Recommend 3 engineering-oriented LLM papers from the last 2 months.
 - Recommend 5 papers about distillation and LLM serving, but avoid theory-heavy work.
