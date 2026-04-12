@@ -21,18 +21,16 @@ When the user does not specify a number, choose the **3 best overall matches** f
 Use both of these paper-discovery sources:
 - arXiv
 - Hugging Face Papers: `https://huggingface.co/papers`
-- OpenAI and Anthropic public research posts or technical reports, when they are truly worth the reader's time
 
 If the same paper appears in both places, that overlap is fine. Do not exclude a paper just because it is listed on both sources.
 
 ## Organization priority
-When there are new, relevant papers, technical reports, or public research posts from OpenAI or Anthropic, treat them as high-priority candidates.
+When there are new, relevant published papers or preprints from OpenAI or Anthropic, treat them as high-priority candidates.
 - Prefer them over similarly relevant papers from other organizations.
-- If both OpenAI and Anthropic have new, relevant, high-quality items, try to include both within the selected 3.
-- Public research posts are acceptable, but only include them after a second-pass worth-reading check.
-- For research posts, double-check that the post has concrete mechanisms, practical engineering implications, credible examples/evidence, or product/safety relevance for the reader.
-- Do not force-include an item solely because of the organization if it is off-topic, too high-level, weakly supported, or not useful for the reader's engineering goals.
-- Clearly label each OpenAI or Anthropic item as **Paper**, **Technical report**, or **Research post**.
+- If both OpenAI and Anthropic have new, relevant, high-quality papers, try to include both within the selected 3.
+- It is fine to use OpenAI or Anthropic website pages to discover a paper, but only recommend the item if there is an actual paper/preprint record such as arXiv, Hugging Face Papers, a conference/journal page, or a PDF.
+- Do not recommend standalone company blog posts, product posts, or research posts in this skill. The user has another skill for digesting posts.
+- Do not force-include a paper solely because of the organization if it is off-topic, weakly supported, or not useful for the reader's goals.
 
 ## Reader profile to optimize for
 Assume the reader:
@@ -63,7 +61,7 @@ Avoid or strongly deprioritize papers that are mainly:
 When choosing papers:
 1. Favor recent papers from arXiv and Hugging Face Papers.
 2. It is fine if the same paper appears in both sources; overlap is not a reason to exclude it.
-3. Give high priority to new, relevant papers, technical reports, and research posts from OpenAI and Anthropic.
+3. Give high priority to new, relevant published papers or preprints from OpenAI and Anthropic.
 4. Optimize first for **fit to the user's interests and reader profile**, not for topic coverage.
 5. Among plausible candidates, choose the **highest-quality** papers based on clarity of problem, strength of method, credibility of evaluation, and practical relevance.
 6. Prefer papers that clearly state a system problem, method, and evaluation.
@@ -74,8 +72,7 @@ When choosing papers:
 ## Output format
 For each paper, provide:
 - **Title**
-- **Type**: Paper / Technical report / Research post
-- **Links**: arXiv link, plus Hugging Face Papers link when available
+- **Links**: arXiv, Hugging Face Papers, conference/journal, or PDF link when available
 - **Why it was selected**: 1 sentence
 - **Rough summary**: 2-4 short bullets, high level only
 - **Engineering takeaway**: 1 bullet
